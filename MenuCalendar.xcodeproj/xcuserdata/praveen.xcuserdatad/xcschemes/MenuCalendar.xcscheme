@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AC12EBF41C428DCF00D8B0CB"
+               BuildableName = "MenuCalendar.app"
+               BlueprintName = "MenuCalendar"
+               ReferencedContainer = "container:MenuCalendar.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AC12EC031C428DCF00D8B0CB"
+               BuildableName = "MenuCalendarTests.xctest"
+               BlueprintName = "MenuCalendarTests"
+               ReferencedContainer = "container:MenuCalendar.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AC12EC0E1C428DD000D8B0CB"
+               BuildableName = "MenuCalendarUITests.xctest"
+               BlueprintName = "MenuCalendarUITests"
+               ReferencedContainer = "container:MenuCalendar.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AC12EBF41C428DCF00D8B0CB"
+            BuildableName = "MenuCalendar.app"
+            BlueprintName = "MenuCalendar"
+            ReferencedContainer = "container:MenuCalendar.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AC12EBF41C428DCF00D8B0CB"
+            BuildableName = "MenuCalendar.app"
+            BlueprintName = "MenuCalendar"
+            ReferencedContainer = "container:MenuCalendar.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AC12EBF41C428DCF00D8B0CB"
+            BuildableName = "MenuCalendar.app"
+            BlueprintName = "MenuCalendar"
+            ReferencedContainer = "container:MenuCalendar.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

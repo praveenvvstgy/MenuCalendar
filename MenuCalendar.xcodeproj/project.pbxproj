@@ -12,6 +12,10 @@
 		AC12EBFE1C428DCF00D8B0CB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC12EBFC1C428DCF00D8B0CB /* MainMenu.xib */; };
 		AC12EC091C428DCF00D8B0CB /* MenuCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12EC081C428DCF00D8B0CB /* MenuCalendarTests.swift */; };
 		AC12EC141C428DD000D8B0CB /* MenuCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12EC131C428DD000D8B0CB /* MenuCalendarUITests.swift */; };
+		AC12EC291C42968500D8B0CB /* MLCalendarBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = AC12EC231C42968500D8B0CB /* MLCalendarBackground.m */; };
+		AC12EC2A1C42968500D8B0CB /* MLCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC12EC251C42968500D8B0CB /* MLCalendarCell.m */; };
+		AC12EC2B1C42968500D8B0CB /* MLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC12EC271C42968500D8B0CB /* MLCalendarView.m */; };
+		AC12EC2C1C42968500D8B0CB /* MLCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC12EC281C42968500D8B0CB /* MLCalendarView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,14 @@
 		AC12EC0F1C428DD000D8B0CB /* MenuCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC12EC131C428DD000D8B0CB /* MenuCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCalendarUITests.swift; sourceTree = "<group>"; };
 		AC12EC151C428DD000D8B0CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC12EC211C42968500D8B0CB /* MenuCalendar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MenuCalendar-Bridging-Header.h"; sourceTree = "<group>"; };
+		AC12EC221C42968500D8B0CB /* MLCalendarBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLCalendarBackground.h; path = MLCalendar/MLCalendarBackground.h; sourceTree = SOURCE_ROOT; };
+		AC12EC231C42968500D8B0CB /* MLCalendarBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLCalendarBackground.m; path = MLCalendar/MLCalendarBackground.m; sourceTree = SOURCE_ROOT; };
+		AC12EC241C42968500D8B0CB /* MLCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLCalendarCell.h; path = MLCalendar/MLCalendarCell.h; sourceTree = SOURCE_ROOT; };
+		AC12EC251C42968500D8B0CB /* MLCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLCalendarCell.m; path = MLCalendar/MLCalendarCell.m; sourceTree = SOURCE_ROOT; };
+		AC12EC261C42968500D8B0CB /* MLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLCalendarView.h; path = MLCalendar/MLCalendarView.h; sourceTree = SOURCE_ROOT; };
+		AC12EC271C42968500D8B0CB /* MLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLCalendarView.m; path = MLCalendar/MLCalendarView.m; sourceTree = SOURCE_ROOT; };
+		AC12EC281C42968500D8B0CB /* MLCalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MLCalendarView.xib; path = MLCalendar/MLCalendarView.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +105,12 @@
 		AC12EBF71C428DCF00D8B0CB /* MenuCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				AC12EC2D1C42968F00D8B0CB /* MLCalendar */,
 				AC12EBF81C428DCF00D8B0CB /* AppDelegate.swift */,
 				AC12EBFA1C428DCF00D8B0CB /* Assets.xcassets */,
 				AC12EBFC1C428DCF00D8B0CB /* MainMenu.xib */,
 				AC12EBFF1C428DCF00D8B0CB /* Info.plist */,
+				AC12EC211C42968500D8B0CB /* MenuCalendar-Bridging-Header.h */,
 			);
 			path = MenuCalendar;
 			sourceTree = "<group>";
@@ -117,6 +131,20 @@
 				AC12EC151C428DD000D8B0CB /* Info.plist */,
 			);
 			path = MenuCalendarUITests;
+			sourceTree = "<group>";
+		};
+		AC12EC2D1C42968F00D8B0CB /* MLCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				AC12EC221C42968500D8B0CB /* MLCalendarBackground.h */,
+				AC12EC231C42968500D8B0CB /* MLCalendarBackground.m */,
+				AC12EC241C42968500D8B0CB /* MLCalendarCell.h */,
+				AC12EC251C42968500D8B0CB /* MLCalendarCell.m */,
+				AC12EC261C42968500D8B0CB /* MLCalendarView.h */,
+				AC12EC271C42968500D8B0CB /* MLCalendarView.m */,
+				AC12EC281C42968500D8B0CB /* MLCalendarView.xib */,
+			);
+			name = MLCalendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC12EC2C1C42968500D8B0CB /* MLCalendarView.xib in Resources */,
 				AC12EBFB1C428DCF00D8B0CB /* Assets.xcassets in Resources */,
 				AC12EBFE1C428DCF00D8B0CB /* MainMenu.xib in Resources */,
 			);
@@ -249,7 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC12EC291C42968500D8B0CB /* MLCalendarBackground.m in Sources */,
+				AC12EC2B1C42968500D8B0CB /* MLCalendarView.m in Sources */,
 				AC12EBF91C428DCF00D8B0CB /* AppDelegate.swift in Sources */,
+				AC12EC2A1C42968500D8B0CB /* MLCalendarCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,11 +412,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MenuCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.praveengowda.app.MenuCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MenuCalendar/MenuCalendar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -392,11 +427,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MenuCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.praveengowda.app.MenuCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MenuCalendar/MenuCalendar-Bridging-Header.h";
 			};
 			name = Release;
 		};
